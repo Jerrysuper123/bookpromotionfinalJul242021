@@ -1,0 +1,137 @@
+<!-- {! and enter to get basic html} -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvertedFishBone</title>
+    <Link rel="styleSheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <div style="background-image:url('images/banner.jpeg');" class="banner">
+  
+            <div class="menu" onclick="OpenPopUp()">
+                <div class="menuIcon">
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                    
+                </div>
+                <p class="menuText">MENU</p>
+            </div>
+      
+            
+            <div id="popUp">
+            <div class="navMobile">
+              
+                    <p class="closeNavMobile" onclick="hidePopUp()">x</p>
+                <a>Home</a>
+                <a>Welcome</a>
+                <a>Mission</a>
+                <a>Vision</a>
+                <a>Contact</a>
+            </div>
+        </div>
+
+            <nav>
+                <div class="topnav">
+                    <a>Home</a>
+                    <a>Welcome</a>
+                    <a>Mission</a>
+                    <a>Vision</a>
+                    <a>Contact</a>
+                   
+                </div>
+                
+            </nav>
+            <form class="search">
+                <input type="search" placeholder="Enter keyword" name="search"/>
+                <input type="submit" value="Search"/>
+            </form>
+            <h1 class="bannerText">this for public speaking, come and join us to learn inverted fishbone theory <br />
+                Buy the book now to learn this!</h1>
+            <p class="author"><i>by jerry Chen best selling author</i></p>
+            <div class="socialMedia">
+                <img src="images/linkedin.png" width="30px">
+                <img src="images/facebook.png" width="30px">
+            </div>
+        </div>
+        <div class="text">
+            <p>
+                Love connecting with people
+                How to speak better
+
+                1. Practise daily
+                a. Central point first
+                b. Reverse fishbone theory
+
+                How to organize thoughts when speaking
+                1. Pause for 3-5 seconds
+                2. Frame your thoughts
+                a. Pres (point, reason, example, summary)
+                b. 3 points
+                c. Problem, solution, result
+                d. Introduction, body, summary
+
+            </p>
+            <p>ahahs</p>
+
+            <p>ahahs</p>
+
+            <p>
+                Love connecting with people
+                How to speak better
+
+                1. Practise daily
+                a. Central point first
+                b. Reverse fishbone theory
+
+                How to organize thoughts when speaking
+                1. Pause for 3-5 seconds
+                2. Frame your thoughts
+                a. Pres (point, reason, example, summary)
+                b. 3 points
+                c. Problem, solution, result
+                d. Introduction, body, summary
+
+            </p>
+
+            <footer>
+                <fieldset>
+                    <legend>NEWSLETTER</legend>
+                    <form action="">
+                        <p>Subscribe to our email list:</p>
+                        <input type="text" name="email"/>
+                        <input type="submit" name="subscribe" value="Subscribe"/>
+                    </form>
+
+                </fieldset>
+                
+            </footer>
+            
+        </div>
+        <span id="copy"></span>
+        <script>
+            function OpenPopUp(){
+                document.getElementById("popUp").style.display="block";
+            }
+
+            function hidePopUp(){
+                document.getElementById("popUp").style.display="none";
+            }
+
+            var today = new Date();
+            year = today.getFullYear();
+            document.getElementById("copy").innerHTML='<p>Copyright &copy;' + year +'</p>';
+
+        </script>
+    </div>
+
+</body>
+
+</html>
